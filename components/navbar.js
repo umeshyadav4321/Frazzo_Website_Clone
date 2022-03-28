@@ -25,8 +25,8 @@ function navbar(){
             <div>Credits</div>
         
         </div>
-        <div id="usericon">
-            <div>User</div>
+        <div id="usericon" >
+            <div onclick="window.location.href='Login.html'">User</div>
         <div> <img  id="usericonimg" src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png" alt=""></div>
         </div>
         </div>
