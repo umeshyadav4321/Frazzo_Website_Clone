@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* color:rgb(167,167,167); */
+            font-family: sans-serif;
+        }
+        #container{
+            height: 80px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: flex;
+        }
+        #first-box{
+            width: 30%;
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+        }
+        #first-box>div>img{
+            width: 45%;
+            height: 20%;
+            margin-left: 10%;
+        }
+        #third-box{
+            width: 25%;
+            /* border: 1px solid black; */
+            display:flex;
+            justify-content:space-evenly;
+        }
+        #third-box>div{
+            margin-top: 8%;
+        }
+        #second-box{
+            width: 45%;
+            /* border: 1px solid black; */
+        }
+        #input-box>input{
+            width: 90%;
+            margin: auto;
+            padding: 15px 18px 15px 18px;
+            border-radius: 18px;
+            margin-top: 3%;
+            background-color:rgb(249,249,249);
+            border:0.1px solid grey;
+        }
+        #cardicon{
+            width:22px;
+            opacity: 0.5;
+        }
+        #cart-Icon{
+            display: flex;
+          
+        }
+        #usericon{
+            display: flex;
+        }
+        #usericonimg{
+            width: 17px;
+            opacity: 0.5;
+        }
+        #creditsicon{
+            display: flex;
+        }
+        #Credit-Icon{
+            width: 20px;
+            height: 17px;
+            opacity: 0.5;
+        }
+        #home{
+            display: flex;
+        }
+        #homeicon{
+            width: 19px;
+            opacity: 0.5;
+        }
+        #footer-container{
+            height: 820px;
+            /* border: 1px solid red;  */
+            background-color:rgb(22,82,65);
+            color: white;
+           
+
+        }
+        
+        #f1{
+            display: flex;
+        }
+        #f1>div{
+            width: 25%;
+            height:50%;
+            /* border: 1px solid black; */
+            margin-top: 5%;
+            padding: 5px 20px 5px 20px;
+        }
+        #f1>div>img{
+            width: 40%;
+            align-items: center;
+
+        }
+        #f2{
+            height: 50%;
+            padding: 5px 20px 5px 20px;
+            /* border: 1px solid red; */
+        }
+        #email-icon{
+            width: 30px;
+            /* opacity: 0.5; */
+        }
+        #phone-icon{
+            width: 30px;
+            /* opacity: 0.5; */
+        }
+        #E-mail{
+            display: flex;
+        }
+        #Contact{
+            display: flex;
+        }
+       #bottom-copyright{
+           margin-left: 530px;
+       }
+       #maindiv1{
+           width: 95%;
+           height: 450px;
+           border: 1px solid red;
+           /* margin-top: 50px; */
+           display: flex;
+           margin: 40px 30px  10px 30px
+       }
+       #div-sec{
+           width: 45%;
+           height: 100%;
+           border: 1px solid green;
+       }
+       #div-sec>div{
+           margin: 10px 10px 5px 20px;
+           height: 26%;
+           width: 98%;
+       }
+       .slideshow-container{
+           width: 80%;
+           height: 80%;
+           border: 1px solid black;
+       }
+       #div-one{
+           display: grid;
+           grid-template-columns: repeat(5,1fr);
+           justify-content:space-between;
+           
+
+       }
+       #div-one>div{
+        height: 330px;
+           width: 250px;
+           border: 1px solid red;
+       }
+       #div-second{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           justify-content:space-between;
+           
+
+       }
+       #div-second>div{
+        height: 330px;
+           width: 280px;
+           border: 1px solid red;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="Navbar"></div>
+
+    
+
+    <div id="maindiv1">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img id="imgslide" style="width:100%"
+                    src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2083.png?1648233246"
+                    alt="">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img id="img" style="width:100%"
+                    src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2094.png?1648232238"
+                    alt="">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img id="img" style="width:100%"
+                    src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2095.png?1648232274"
+                    alt="">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img id="img" style="width:100%"
+                    src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2096.png?1648232321"
+                    alt="">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img id="img" style="width:100%"
+                    src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2097.png?1648232372"
+                    alt="">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img id="imgslide" style="width:100%"
+                    src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2098.png?1648232405"
+                    alt="">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img id="img" style="width:100%"
+                    src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2099.png?1648232433"
+                    alt="">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img id="img" style="width:100%"
+                    src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2100.png?1648232460"
+                    alt="">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img id="img" style="width:100%"
+                    src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2080.png?1648232544"
+                    alt="">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img id="img" style="width:100%"
+                    src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/2166.png?1648010522"
+                    alt="">
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div id="div-sec">
+            <div>
+                <img src="https://fraazo.com/static/Web1-cafcda6bf22c11e6bbaed467d13a0eb7.png" alt="image" height="110px">
+            </div>
+            <div>
+                <img src="https://fraazo.com/static/Web2-9a152d86240414d76ce205c491e47c4e.png"  alt="image" height="110px">
+            </div>
+            <div>
+                <img src="https://fraazo.com/static/Web3-9f5a46f22ff99bcfe079257218356413.png"  alt="image" height="110px">
+            </div>
+        </div>
+
+        </div>
+        <div id="div-one">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="div-second">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+
+
+
+    <div id="Footer-Cont"></div>
+    
+    
+</body>
+</html>
+<script type= "module" src="./index.js">
+    
+
+
+</script>
