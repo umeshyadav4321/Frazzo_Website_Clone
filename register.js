@@ -21,14 +21,7 @@ function CONTINUE(event) {
    alert("Succesfully Registered")
         window.location.href = "login.html"
     })
-
-
-
     import { navbar } from "./components/navbar.js";
-    document.querySelector("#navbar-container").innerHTML= navbar()
-    
-    
-    
-    
+    document.querySelector("#navbar-container").innerHTML= navbar()  
     import { footer } from "./components/footer.js";
     document.querySelector("#footerContainer").innerHTML= footer()
