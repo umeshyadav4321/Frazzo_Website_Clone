@@ -78,6 +78,8 @@
             width: 19px;
             opacity: 0.5;
         }
+        /* header end */
+        /* header start */
         #footer-container{
             height: 820px;
             /* border: 1px solid red;  */
@@ -124,10 +126,12 @@
        #bottom-copyright{
            margin-left: 530px;
        }
+       /* footer end */
+       /* indexpage */
        #maindiv1{
            width: 95%;
-           height: 450px;
-           border: 1px solid red;
+           height: 410px;
+           /* border: 1px solid red; */
            /* margin-top: 50px; */
            display: flex;
            margin: 40px 30px  10px 30px
@@ -135,29 +139,36 @@
        #div-sec{
            width: 45%;
            height: 100%;
-           border: 1px solid green;
+           /* border: 1px solid green; */
        }
        #div-sec>div{
-           margin: 10px 10px 5px 20px;
+           margin: 10px 10px 10px 20px;
            height: 26%;
            width: 98%;
        }
        .slideshow-container{
            width: 80%;
            height: 80%;
-           border: 1px solid black;
+           /* border: 1px solid black; */
        }
        #div-one{
            display: grid;
            grid-template-columns: repeat(5,1fr);
            justify-content:space-between;
-           
+           /* width: 90%; */
+           /* border: 1px solid red; */
+           margin: auto;  
 
+       }
+       #div-one>div:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
        }
        #div-one>div{
         height: 330px;
-           width: 250px;
-           border: 1px solid red;
+           width: 270px;
+           background-color:rgb(249,249,249);
+           border: 0.000000001px solid grey;
+           border-radius: 10px;
        }
        #div-second{
            display: grid;
@@ -169,17 +180,108 @@
        #div-second>div{
         height: 330px;
            width: 280px;
-           border: 1px solid red;
+           /* border: 1px solid red; */
        }
+       #categories-font{
+           font-size: 30px;
+       }
+       #allMainContainer{
+           width: 95%;
+           /* border: 1px solid green; */
+           margin: auto;
+           margin-top: 20px;
+           /* display: flex; */
+       }
+       #Div2Pics{
+           width: 95%;
+           /* border: 1px solid black; */
+           margin: auto;
+           display: grid;
+           margin-top: 30px;
+           grid-template-columns: repeat(4,1fr);
+        /* display: flex; */
+       }
+       #divider{
+           display: flex;
+           justify-content: space-around;
+       }
+       #buttonid{
+           width: 80px;
+           margin-top: 25px;
+           height: 30px;
+           border-radius: 20px;
+           color: rgb(79,193,191);
+           border-color: rgb(79,193,191); 
+       }
+       #buttonid:hover{
+           color: white;
+           background-color: rgb(79,193,191) ;
+       }
+       #Prod_desc{
+           margin: 2px 5px 10px 10px;
+       }
+       #picssecondarrange{
+        width: 50%;
+           /* border: 1px solid green; */
+           margin: auto;
+           /* border: 1px solid black; */
+           display: flex;
+
+       }
+       #picssecondarrange>div{
+           margin: 5px 10px 5px 20px;
+       }
+       #Lst_container{
+           width: 93%;
+           margin: auto;
+           height: 600px;
+           /* border: 1px solid red; */
+           display: flex;
+       }
+       #Lst_container>div{
+           margin: 5px 5px 5px 20px;
+       }
+       #appDownButton{
+           display: flex;
+         
+       }
+       #appDownButton>button{
+           margin: 5px 5px 5px 5px;
+           border: none;
+           width: 90px;
+           height: 35px;
+           color: white;
+           background-color: black;
+           border-radius: 20px;
+         
+       }
+       #appDownButton>button:hover{
+           color: black;
+           background-color: white;
+         
+       }
+       #MobNumber{
+           width: 90%;
+           height: 10%;
+           margin: 5px 0px 20px 10px;
+           font-size: 30px;
+       }
+       #submit{
+           width: 90%;
+           height: 10%;
+           margin: 5px 0px 20px 10px;
+           background-color: rgb(172,229,215);
+           color:black;
+           font-size: 30px;
+       }
+
+
+       
 
     </style>
 </head>
 <body>
     <div id="Navbar"></div>
-    <h1>Good</h1>
-
-    
-
     <div id="maindiv1">
         <div class="slideshow-container">
 
@@ -271,28 +373,509 @@
         </div>
 
         </div>
+        <div id="allMainContainer">
+        <div id="categories-font">BEST DEALS</div>
         <div id="div-one">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/images/images/000/004/598/original/data?1647718256" alt="image" height="200px">
+                <p id="Prod_desc">Special WaterMelon</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/003/199/original/data?1641397675" alt="image" height="200px">
+                <p id="Prod_desc">Special Palak</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/BONI11.png" alt="image" height="200px">
+                <p id="Prod_desc">Onion</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VLAD12.png" alt="image" height="200px">
+                <p id="Prod_desc">Ladies Finger</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/BTOM11.png" alt="image" height="200px">
+                <p id="Prod_desc">Tomato/Tamatar</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
-        <div id="div-second">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
         </div>
-    
+        <div id="Div2Pics">
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web/298.png?1647330831" alt="image" width="330px" height="350px">
+            </div>
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/webban/Fruits.png" alt="" width="330px" height="350px">
+            </div>
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/webban/Vegetables.png" alt="" width="330px" height="350px">
+            </div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web/1.png?1619161151" alt="" width="330px" height="350px">
+            </div>
+           
+        </div>
+        <div id="picssecondarrange">
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/webban/hydroponics_web.png" alt="" width="330px" height="350px">
+            </div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web/201.png?1635224001" alt="" width="330px" height="350px">
+            </div>
+        </div>
+        <div id="allMainContainer">
+            <div id="categories-font">MANGOES</div>
+        <div id="div-one">
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/images/images/000/004/597/original/data?1647577454" alt="image" height="200px">
+                <p id="Prod_desc">Mango Raw</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VMAN12.png" alt="image" height="200px">
+                <p id="Prod_desc">Mango Totapuri</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/329/original/data?1616795305" alt="image" height="200px">
+                <p id="Prod_desc">Alphonso Mango Devgad</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="allMainContainer">
+            <div id="categories-font">FRUITS</div>
+        <div id="div-one">
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/006/original/data?1642616267" alt="image" height="200px">
+                <p id="Prod_desc">Apple Royal Gola</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FAVO21.png" alt="image" height="200px">
+                <p id="Prod_desc">Avacado Indian</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FBAN14.png" alt="image" height="200px">
+                <p id="Prod_desc">Banana Robusta</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/092/original/data?1620114635" alt="image" height="200px">
+                <p id="Prod_desc">Papaya</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VPAP12.png" alt="image" height="200px">
+                <p id="Prod_desc">Papaya Raw</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹12</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="allMainContainer">
+            <div id="categories-font">VEGETABLES</div>
+        <div id="div-one">
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VARB12.png" alt="image" height="200px">
+                <p id="Prod_desc">Arbi(Colocasia)</p>
+                <div id="divider">
+                    <div>
+                        <p>500g</p>
+                        <p>₹24</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VBEE12.png" alt="image" height="200px">
+                <p id="Prod_desc">BeetRoot</p>
+                <div id="divider">
+                    <div>
+                        <p>500g</p>
+                        <p>₹14</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VCAP12.png" alt="image" height="200px">
+                <p id="Prod_desc">Capsicum(Shimala)</p>
+                <div id="divider">
+                    <div>
+                        <p>1pc</p>
+                        <p>₹60</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VLAD12.png" alt="image" height="200px">
+                <p id="Prod_desc">Ladies</p>
+                <div id="divider">
+                    <div>
+                        <p>250g</p>
+                        <p>₹9</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/EMUS2.png" alt="image" height="200px">
+                <p id="Prod_desc">Mushroom</p>
+                <div id="divider">
+                    <div>
+                        <p>1unit</p>
+                        <p>₹39</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="allMainContainer">
+            <div id="categories-font">Herbs</div>
+        <div id="div-one">
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VAWL11.png" alt="image" height="200px">
+                <p id="Prod_desc">Amla</p>
+                <div id="divider">
+                    <div>
+                        <p>250g</p>
+                        <p>₹39</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VCHI22.png" alt="image" height="200px">
+                <p id="Prod_desc">Green Chillies</p>
+                <div id="divider">
+                    <div>
+                        <p>500g</p>
+                        <p>₹14</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/LCUR11.png" alt="image" height="200px">
+                <p id="Prod_desc">Curry Leaves</p>
+                <div id="divider">
+                    <div>
+                        <p>50g</p>
+                        <p>₹14</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VGIN12.png" alt="image" height="200px">
+                <p id="Prod_desc">Ginger(Adrak)</p>
+                <div id="divider">
+                    <div>
+                        <p>100g</p>
+                        <p>₹6</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://fraazo-master.s3.ap-south-1.amazonaws.com/products/LMET1.png" alt="image" height="200px">
+                <p id="Prod_desc">Methi</p>
+                <div id="divider">
+                    <div>
+                        <p>100g</p>
+                        <p>₹10</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="allMainContainer">
+            <div id="categories-font">HYDDROPONICS</div>
+        <div id="div-one">
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/169/original/data?1599847670" alt="image" height="200px">
+                <p id="Prod_desc">Celery(Hydroponics)</p>
+                <div id="divider">
+                    <div>
+                        <p>100-200g</p>
+                        <p>₹67</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/170/original/data?1599847734" alt="image" height="200px">
+                <p id="Prod_desc">Baby Spinach(Hydroponics)</p>
+                <div id="divider">
+                    <div>
+                        <p>100g</p>
+                        <p>₹78</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/631/original/data?1635766646" alt="image" height="200px">
+                <p id="Prod_desc">Mixed lettuce</p>
+                <div id="divider">
+                    <div>
+                        <p>1punnet(approx 100g)</p>
+                        <p>₹100</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="allMainContainer">
+            <div id="categories-font">Dry Fruits</div>
+        <div id="div-one">
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/578/original/data?1635085993" alt="image" height="200px">
+                <p id="Prod_desc">Cashew 200gms(pack of 2*100gms)</p>
+                <div id="divider">
+                    <div>
+                        <p>200g</p>
+                        <p>₹185</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/579/original/data?1635086198" alt="image" height="200px">
+                <p id="Prod_desc">Cashew 500gms(pack of 500gms)</p>
+                <div id="divider">
+                    <div>
+                        <p>500g</p>
+                        <p>₹460</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/580/original/data?1635086672" alt="image" height="200px">
+                <p id="Prod_desc">Cashew Tukda-100gm</p>
+                <div id="divider">
+                    <div>
+                        <p>100gm</p>
+                        <p>₹84</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/583/original/data?1635137039" alt="image" height="200px">
+                <p id="Prod_desc">Walnut</p>
+                <div id="divider">
+                    <div>
+                        <p>100g</p>
+                        <p>₹175</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/584/original/data?1635137208.s3.ap-south-1.amazonaws.com/products/EMUS2.png" alt="image" height="200px">
+                <p id="Prod_desc">Walnut 200gms(pack of 2*100gms)</p>
+                <div id="divider">
+                    <div>
+                        <p>200g</p>
+                        <p>₹335</p>
+                    </div>
+                    <div>
+                        <button id="buttonid">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="Lst_container">
+            <div>
+                <img src="https://fraazo.com/static/app-screen-95bf468762091341a8e4bb213eeda2f8.png" alt="image" height="600px">
+            </div>
+            <div>
+                <h1>Download the App</h1>
+                <p>Enter your phone number to recieve a text with a link tobr
+                    download app.
+                </p>
+                <div id="appDownButton">
+                    <button>Android</button>
+                    <button>IPhone</button>
+                </div>
+                <input type="text" name="" id="MobNumber" placeholder="Enter your number">
+              <button id="submit">Submit</button>
 
-
-
+            </div>
+ 
+        </div>
+        </div>
+        
     <div id="Footer-Cont"></div>
-    
-    
 </body>
 </html>
 <script type= "module" src="./index.js">
