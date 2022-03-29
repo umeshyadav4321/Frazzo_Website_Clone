@@ -57,16 +57,19 @@ var data=[
     },
 ]
 
-var prods=JSON.parse(localStorage.getItem("Prod"))||[];
-data.map(function(elem){
-var object={
-    image:elem.image,
-    name:elem.name,
-    category:elem.category,
-    reveiews:elem.reviews,
-    price:elem.price,
-    type:elem.type
-}
-prods.push(object)
-localStorage.setItem("Prod",JSON.stringify(prods));
-})
+var products=localStorage.setItem("prods",JSON.stringify(data));
+// console.log(5);
+// var prods=JSON.parse(localStorage.getItem("Prod"))||[];
+// data.map(function(elem){
+// var object={
+//     image:elem.image,
+//     name:elem.name,
+//     category:elem.category,
+//     reveiews:elem.reviews,
+//     price:elem.price,
+//     type:elem.type
+// }
+// prods.push(object)
+// localStorage.setItem("Prod",JSON.stringify(data));
+// })
+// 
