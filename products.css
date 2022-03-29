@@ -122,7 +122,7 @@
 /* product page css */
 #main{
     width: 90%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
       display: grid;
       grid-template-columns: repeat(4,1fr);
