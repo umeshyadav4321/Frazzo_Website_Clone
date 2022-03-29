@@ -118,3 +118,51 @@
 #bottom-copyright{
    margin-left: 530px;
 }
+
+/* product page css */
+#main{
+    width: 90%;
+    border: 1px solid red;
+    margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 30px;
+  }
+  #MainDiv{
+    height:430px ;
+    width: 280px;
+    padding: 2px 2px 2px 10px;
+    background-color:rgb(249,249,249);
+    border: 0.000000001px solid grey;
+    border-radius: 10px;
+  }
+  #MainDiv:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  }
+  #buttonP{
+    width: 90px;
+    border: 1 px  rgb(79,193,191) ;
+
+    padding: 3px 10px 3px 10px;
+    color: rgb(79,193,191);
+    border-radius: 15px;
+    margin: 5px 0px 30px 150px ;
+  }
+  #buttonP:hover{
+    background-color:rgb(79,193,191) ;
+    color: white;
+  }
+  #heading-top{
+    font-size: 60px;
+    /* border: 1px solid red; */
+  margin-left: 570px;
+    /* margin: auto; */
+  }
+  select{
+    margin: 0px 0px 20px 620px;
+    width: 180px;
+    height: 60px;
+    padding: 5px 10px 10px 20px;
+    /* margin: 4px 5px 30px 20px; */
+  }

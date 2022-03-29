@@ -50,7 +50,7 @@ function displayProducts(produs){
         var qty=document.createElement("p");
         qty.innerHTML=el.Qty;
         var prices=document.createElement("p");
-        prices.innerHTML=el.price;
+        prices.innerHTML=`₹${el.price}`;
         var but=document.createElement("button");
         but.setAttribute("id","buttonP")
         but.textContent="Add";
@@ -59,9 +59,4 @@ function displayProducts(produs){
     });
 };
 
-// import { navbar } from "./components/navbar.js";
-// document.querySelector("#navbar-container").innerHTML= navbar();
-
-// import {footer} from "./components/footer.js";
-// document.querySelector("#footer").innerHTML=footer();
 
