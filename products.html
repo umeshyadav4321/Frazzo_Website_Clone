@@ -5,29 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./products.css">
     <style>
         #main{
+          width: 80%;
+          /* border: 1px solid red; */
+          margin: auto;
             display: grid;
             grid-template-columns: repeat(4,1fr);
-            grid-gap: 20px;
+            grid-gap: 50px;
+        }
+        #MainDiv{
+          height:430px ;
+          padding: 2px 2px 2px 10px;
+          background-color:rgb(249,249,249);
+          border: 0.000000001px solid grey;
+          border-radius: 10px;
+        }
+        #MainDiv:hover{
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+        }
+        #buttonP{
+          width: 90px;
+          border: 1 px  rgb(79,193,191) ;
+
+          padding: 3px 10px 3px 10px;
+          color: rgb(79,193,191);
+          border-radius: 15px;
+          margin: 5px 0px 30px 150px ;
+        }
+        #buttonP:hover{
+          background-color:rgb(79,193,191) ;
+          color: white;
+        }
+        #heading-top{
+          font-size: 60px;
+          /* border: 1px solid red; */
+        margin-left: 570px;
+          /* margin: auto; */
+        }
+        select{
+          margin: 0px 0px 20px 620px;
+          width: 180px;
+          height: 60px;
+          padding: 5px 10px 10px 20px;
+          /* margin: 4px 5px 30px 20px; */
         }
     </style>
 </head>
 <body>
+  <div id="navbar-container"></div>
 
-    <h1  id="facecare">All Products</h1>
-  
+    <h1  id="heading-top">All Products</h1>
     <div id="filter">
-      
-      <select name="" id="sort" onchange="pricesort()">
-        <option value="sort by">Sort by</option>
-      <option value="low">Low to High</option>
-      <option value="high">High To Low</option>
-      </select>
-      <select name="" id="category" onchange="filter()">
-        <option value="shopall">Filter</option>
-        <option value="shopall">banana</option>
-        <option value="FACE CARE">Vegetables</option>
+      <select name="" id="category" onchange="filterbycat()">
+        <option value="">select type</option>
+        <option value="shopall">shop all</option>
+        <option value="mangos">MANGOS</option>
+        <option value="fruits">Mixed Fruits</option>
         <!-- <option value="BODY CARE">BODY CARE</option>
         <option value="HAIR CARE">HAIR CARE</option>
         <option value="AROMATHERAPY">AROMATHERAPY</option>
@@ -38,7 +74,9 @@
     </div>
    
    <div id="main">
+
+  <div id="footer"></div>
     
 </body>
 </html>
-<script src="./products.js"></script>
+<script  src="./products.js"></script>
