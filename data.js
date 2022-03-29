@@ -1,15 +1,57 @@
 var data=[
     {
+        "image":"https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/135/original/data?1612689931",
+        "name":"Mango Badami",
+        "Qty":"1kg",
+        "price":"₹199"
+
+    },
+    {
+        "image":"https://s3.ap-south-1.amazonaws.com/fraazo-prod/images/images/000/004/597/original/data?1647577454",
+        "name":"Mango Totapuri",
+        "Qty":"1kg",
+        "price":"₹129"
+
+    },
+    {
+        "image":"https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/250/original/data?1621065378",
+        "name":"Mango Lalbhag Sindhura",
+        "Qty":"1kg",
+        "price":"₹199"
+
+    },
+    {
+        "image":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VMAN12.png",
+        "name":"Mango Raw",
+        "Qty":"250g",
+        "price":"₹29"
+
+    },
+    {
         "image":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FBAN14.png",
         "name":"Banana Robusta",
-        "Qty":"1kg",
-        "price":"₹39"
+        "Qty":"500g",
+        "price":"₹19"
 
     },
     {
         "image":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FBAN24.png",
         "name":"Banana Elaichi/Yellaki",
+        "Qty":"250g",
+        "price":"₹9"
+
+    },
+    {
+        "image":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FCHI13.png",
+        "name":"Chikoo",
         "Qty":"500g",
+        "price":"₹19"
+
+    },
+    {
+        "image":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FGRA42.png",
+        "name":"Grapes",
+        "Qty":"500",
         "price":"₹59"
 
     },
@@ -23,36 +65,8 @@ var data=[
     {
         "image":"https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/260/original/data?1612450264",
         "name":"Banana Raw",
-        "Qty":"500g",
+        "Qty":"500",
         "price":"₹21"
-
-    },
-    {
-        "image":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VBRI12.png",
-        "name":"Brinjal Bharta",
-        "Qty":"500g",
-        "price":"₹19"
-
-    },
-    {
-        "image":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VLAD12.png",
-        "name":"Ladies Finger",
-        "Qty":"250g",
-        "price":"₹9"
-
-    },
-    {
-        "image":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VCAP12.png",
-        "name":"Capsium",
-        "Qty":"250g",
-        "price":"₹20"
-
-    },
-    {
-        "image":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/VCAU12.png",
-        "name":"Cauliflower",
-        "Qty":"1pc",
-        "price":"₹20"
 
     },
 ]
