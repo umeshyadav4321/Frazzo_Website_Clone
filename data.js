@@ -68,8 +68,8 @@ var data=[
         "Qty":"500",
         "price":"₹21"
 
-    },
-]
+    }
+];
 
 var products=localStorage.setItem("prods",JSON.stringify(data));
 // console.log(5);
