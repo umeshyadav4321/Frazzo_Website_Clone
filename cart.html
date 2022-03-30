@@ -29,22 +29,51 @@
          #container_cart{
             margin: auto;
             width: 40%;
-            border: 1px solid blue;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            padding: 10px 10px 10px 10px ;
+            /* margin: 20px 0px 20px 0px; */
         } 
+        #chkbutton{
+            font-size: 20px;
+            margin:0px 0px 20px 220px;
+            border: none;
+            padding: 30px 30px 30px 30px ;
+            background-color:rgb(79,193,191);
+            color:black;
+            border-radius: 10px;
+        }
+        #chkbutton:hover{
+            background-color: black;
+            color: white;
+        }
+        #rembutton{
+         color: grey;
+         text-decoration: underline;
+        }
+        #rembutton:hover{
+            color: red;
+        }
+        #gotoCart{
+         color: blue;
+         text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     
      <div id="navbar"></div>
+    
     <div id="container_cart">
-        <div><h1 id="items"></h1></div>
+        <div onclick="window.location.href='products.html'" id="gotoCart">Product-page</div>
+        
+        <div><h2 id="items"></h2></div>
         <div id="Cart_Container">
             <!-- <h1>Cart items</h1> -->
            
             
         </div>
         <div><h2 id="TOtal-Amt"></h2></div>
-        <button>Proceed to Payment</button>
+        <button id="chkbutton">Proceed to Payment</button>
     </div>
     <div id="foot"></div>
    

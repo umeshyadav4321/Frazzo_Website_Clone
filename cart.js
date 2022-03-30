@@ -15,21 +15,22 @@ function displayProducts(CartArr){
         qty.innerHTML=el.Qty;
         var prices=document.createElement("p");
         prices.innerHTML=`₹${el.price}`;
-        var but=document.createElement("button");
-        but.textContent="Remove";
-        but.addEventListener("click",function(){
+        var rbut=document.createElement("p");
+       rbut.setAttribute("id","rembutton");
+        rbut.textContent="Remove";
+        rbut.addEventListener("click",function(){
             removeItem(index);
             // console.log(index)
             
         })
-        divsecond.append(name,qty,prices,but);
+        divsecond.append(name,qty,prices,rbut);
         div.append(image,divsecond);
         document.getElementById("Cart_Container").append(div);
     });
 }
 
 var totalcount=document.getElementById("items");
-totalcount.textContent=`Total Count:-${CartArr.length}`;
+totalcount.textContent=`My Cart(${CartArr.length}items)`;
 // console.log(total)
 
 function removeItem(index){
@@ -46,9 +47,11 @@ var total=CartArr.reduce(function(acc,cv){
 },0);
 // console.log(total)
 var totalamount=document.getElementById("TOtal-Amt");
-totalamount.textContent=`total Amount:-${total}`
+totalamount.textContent=`Total Amount is:${total}`
 
 displayProducts(CartArr);
+
+
 
 import { navbar } from "./components/navbar.js";
 document.querySelector("#navbar").innerHTML= navbar()
