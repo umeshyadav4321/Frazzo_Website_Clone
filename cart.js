@@ -1,4 +1,4 @@
-var CartArr=JSON.parse(localStorage.getItem("cartItems"));
+var CartArr=JSON.parse(localStorage.getItem("cartItems"))||[];
 function displayProducts(CartArr){
     document.querySelector("#Cart_Container").innerHTML="";
     CartArr.forEach(function(el,index){
@@ -27,8 +27,9 @@ function displayProducts(CartArr){
         document.getElementById("Cart_Container").append(div);
     });
 }
-displayProducts(CartArr);
-var total=document.getElementById("items").textContent=CartArr.length;
+
+var totalcount=document.getElementById("items");
+totalcount.textContent=`Total Count:-${CartArr.length}`;
 // console.log(total)
 
 function removeItem(index){
@@ -40,6 +41,14 @@ function removeItem(index){
     displayProducts(CartArr);
 
 }
+var total=CartArr.reduce(function(acc,cv){
+    return acc+Number(cv.price)
+},0);
+// console.log(total)
+var totalamount=document.getElementById("TOtal-Amt");
+totalamount.textContent=`total Amount:-${total}`
+
+displayProducts(CartArr);
 
 import { navbar } from "./components/navbar.js";
 document.querySelector("#navbar").innerHTML= navbar()
