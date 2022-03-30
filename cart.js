@@ -50,6 +50,9 @@ var totalamount=document.getElementById("TOtal-Amt");
 totalamount.textContent=`Total Amount is:${total}`
 
 displayProducts(CartArr);
+document.getElementById("chkbutton").addEventListener("click",function(){
+    window.location.href="payment.html"
+})
 
 
 
