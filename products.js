@@ -38,6 +38,7 @@ function filterbycat(){
     }
 }
 function displayProducts(produs){
+    let CartArr=JSON.parse(localStorage.getItem("cartItems"))||[];
     document.querySelector("#main").innerHTML="";
     produs.forEach(function(el){
         var div=document.createElement("div");
@@ -54,9 +55,20 @@ function displayProducts(produs){
         var but=document.createElement("button");
         but.setAttribute("id","buttonP")
         but.textContent="Add";
+        but.addEventListener("click",function(){
+            AddtoCart(el);
+        })
         div.append(image,name,qty,prices,but);
         document.getElementById("main").append(div);
     });
+    function AddtoCart(el){
+        console.log(el);
+        CartArr.push(el);
+        alert("Added to Cart Successfully!")
+        localStorage.setItem("cartItems",JSON.stringify(CartArr));
+    }
 };
+
+
 
 
