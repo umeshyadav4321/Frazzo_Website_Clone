@@ -15,16 +15,23 @@ document.querySelector("#paymentBtn").addEventListener("click",function(event){
     // checking the input field is correct or not and perform some action 
     if(cardnumber==cardNum && cvv==cVV && expireDate==expdate ){
     alert("success full ");
+    window.location="otp.html";
+    // document.getElementById("paymentBtn").addEventListener("click",function(){
+    //     window.location.href="otp.html";
+    
+    // })
     }
     else{
-        alert("Please fill the correct information")
+        alert("Please fill the correct information");
+        document.getElementById("paymentBtn").addEventListener("click",function(){
+            window.location.href="payment.html";
+        
+        })
+        
     }
 });
 
-document.getElementById("paymentBtn").addEventListener("click",function(){
-    window.location.href="otp.html";
 
-})
 
 import { navbar } from "./components/navbar.js";
 document.querySelector("#header").innerHTML= navbar()
