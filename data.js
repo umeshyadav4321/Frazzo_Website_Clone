@@ -475,19 +475,18 @@ var data=[
    
 ]
 
-localStorage.setItem("prods",JSON.stringify(data));
+var prods=JSON.parse(localStorage.getItem("prods"))||[];
 // console.log(5);
 // var prods=JSON.parse(localStorage.getItem("Prod"))||[];
-// data.map(function(elem){
-// var object={
-//     image:elem.image,
-//     name:elem.name,
-//     category:elem.category,
-//     reveiews:elem.reviews,
-//     price:elem.price,
-//     type:elem.type
-// }
-// prods.push(object)
-// localStorage.setItem("Prod",JSON.stringify(data));
-// })
-// 
+data.map(function(elem){
+var object={
+    image:elem.image,
+    name:elem.name,
+    Qty:elem.Qty,
+    // reveiews:elem.reviews,
+    price:elem.price,
+    type:elem.type
+}
+prods.push(object)
+localStorage.setItem("Prods",JSON.stringify(data));
+})
