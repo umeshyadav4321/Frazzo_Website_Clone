@@ -51,11 +51,12 @@
      height: 33px;
       margin: auto;
       margin-top: 15px;
-      background-color:white;
-      color:rgb(225,30,46);
+      background-color:rgb(71,190,155);
+      color:white;
       font-size: 15px;  
-      border:1px solid rgb(225,30,46);
+      border:none;
       font-weight: bold;
+      cursor: pointer;
     }
     #Extradiv{
         height: 52px;
@@ -96,8 +97,7 @@
         border-radius: 50%;
     }
     #button:hover{
-        background-color:rgb(225,30,46);
-        color: white;
+        background-color:black;
     }
     #facebook-text{
         margin-left: 90px;
