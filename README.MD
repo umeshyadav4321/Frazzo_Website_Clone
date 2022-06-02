@@ -3,7 +3,7 @@
 
 ## Frazzo Clone
 
-This was my individual project which I cloned during my third Construct-week at
+This was my individual project which I cloned during my third Construct-week at Masai School.
 
 ## Our Project's Deploy Link :)
 
