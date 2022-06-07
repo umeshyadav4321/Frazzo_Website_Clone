@@ -31,9 +31,9 @@ Cart Page.
 
 Blog Link:-https://medium.com/@umeshyadav3190/fraazo-website-clone-during-construct-week-a16c76633564;
 
-Demo Video:-https://drive.google.com/file/d/1YSGsKhWHtS02kl6UnHGZjkBFQII91gEB/view?usp=sharing; -->
+Demo Video:-https://drive.google.com/file/d/1YSGsKhWHtS02kl6UnHGZjkBFQII91gEB/view?usp=sharing;
 
-<img src="https://user-images.githubusercontent.com/91534605/141649437-f79799b7-9534-425e-8ae1-6b69fc3bd92c.png"/>
+<!-- <img src="https://user-images.githubusercontent.com/91534605/141649437-f79799b7-9534-425e-8ae1-6b69fc3bd92c.png"/> -->
 
 
 
